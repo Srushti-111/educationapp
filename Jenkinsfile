@@ -8,8 +8,8 @@ pipeline {
     }
 
     environment {
-        DOCKER_IMAGE = 'nanducjc123/educationapprepo'
-        SONAR_HOST = 'http://13.50.232.101:9000'
+        DOCKER_IMAGE = 'srushhg/educationapprepo'
+        SONAR_HOST = 'http://65.0.185.87:9000'
         CONTAINER_NAME = 'educationapp'
         APP_PORT = '8080'
     }
@@ -96,7 +96,7 @@ pipeline {
             --name educationapp \
             --restart unless-stopped \
             -p 8081:8080 \
-            nanducjc123/educationapprepo:latest
+            srushhg/educationapprepo:latest
 
             docker ps
         '''
