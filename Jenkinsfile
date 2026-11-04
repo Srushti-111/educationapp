@@ -41,7 +41,7 @@ pipeline {
                         mvn org.sonarsource.scanner.maven:sonar-maven-plugin:5.8.0.7211:sonar \
                         -Dsonar.projectKey=my-project \
                         -Dsonar.projectName=my-project \
-                        -Dsonar.host.url=$SONAR_HOST \
+                        -Dsonar.host.url=http://65.0.185.87:9000 \
                         -Dsonar.token=$SONAR_TOKEN
                     '''
                 }
